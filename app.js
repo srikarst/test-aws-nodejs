@@ -1,5 +1,7 @@
 var { S3Client, ListBucketsCommand } = require("@aws-sdk/client-s3");
-var S3 = new S3Client();
+var S3 = new S3Client({
+  region: "us-east-1",
+});
 var listBucketsCommand = new ListBucketsCommand({});
 
 const port = process.env.PORT || 3000,
