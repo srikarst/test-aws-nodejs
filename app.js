@@ -1,8 +1,5 @@
 var AWS = require("aws-sdk");
-var S3 = new AWS.S3({
-  accessKeyId: "AKIAYDL5INNMUYTFRRXF",
-  secretAccessKey: "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",
-});
+var S3 = new AWS.S3();
 
 const port = process.env.PORT || 3000,
   http = require("http"),
